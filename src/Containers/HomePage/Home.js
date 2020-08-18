@@ -88,6 +88,7 @@ class HomePage extends Component {
               listBtn={classes.ListBtn}
               movies={this.props.movies}
               clicked={this.dropdownHandler}
+              genre={this.props.genre}
               dropClick={(params) => {
                 return this.props.onFetchMovies(params);
               }}
@@ -112,6 +113,7 @@ const mapStateToProps = (state) => {
     movies: state.movies.movies,
     error: state.movies.error,
     loading: state.movies.loading,
+    genre: state.movies.genre,
   };
 };
 

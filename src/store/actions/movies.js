@@ -7,10 +7,11 @@ export const fetchMoviesStart = () => {
   };
 };
 
-export const fetchMoviesSuccess = (movies) => {
+export const fetchMoviesSuccess = (movies, genre) => {
   return {
     type: actionTypes.FETCH_MOVIES_SUCCESS,
     movies: movies,
+    genre: genre
   };
 };
 
@@ -31,7 +32,7 @@ export const fetchMovies = (genre) => {
     axios
       .get(url)
       .then((response) => {
-        dispatch(fetchMoviesSuccess(response.data));
+        dispatch(fetchMoviesSuccess(response.data, genre));
       })
       .catch((error) => {
         dispatch(fetchMoviesFail());

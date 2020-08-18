@@ -3,7 +3,7 @@ import React from 'react';
 import List from './DropdownList/DropdownList';
 
 const dropdown = (props) => {
-  let btnText = props.dropTitle ? 'Movies' : 'Genre';
+  let btnText = props.dropTitle ? 'Movies' : props.genre;
 
   return (
     <div className={props.class}>

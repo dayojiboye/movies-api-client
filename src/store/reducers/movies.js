@@ -6,6 +6,7 @@ const initialState = {
   loading: false,
   error: false,
   deleted: false,
+  genre: null,
 };
 
 const reducer = (state = initialState, action) => {
@@ -33,6 +34,7 @@ const reducer = (state = initialState, action) => {
       loading: false,
       movies: movies,
       error: false,
+      genre: action.genre || 'All',
     };
   }
   if (action.type === actionTypes.FETCH_MOVIES_START) {

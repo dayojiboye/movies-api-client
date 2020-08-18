@@ -20,19 +20,21 @@
 }
 
 .DropBtn {
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 0;
+  width: 120px;
   background: white;
   border: 1px solid #ccc;
   font-family: inherit;
   font-size: 1rem;
   outline: none;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .DropMenu {
   position: absolute;
   display: none;
-  width: 96.78px;
+  width: 120px;
   background: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
   z-index: 1;
