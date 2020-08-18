@@ -41,6 +41,7 @@
 
 .DropMenu.Show {
   display: block;
+  margin-bottom: 4rem;
 }
 
 .DropMenu ul {
