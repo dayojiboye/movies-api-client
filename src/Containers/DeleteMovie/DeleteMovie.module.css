@@ -1,0 +1,67 @@
+.DeleteMovie {
+  width: 100%;
+  padding: 3rem 1rem;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.Dropdown {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.DropBtn {
+  padding: 0.3rem 3rem;
+  background: white;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.DropMenu {
+  position: absolute;
+  display: none;
+  width: 167px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+  z-index: 1;
+}
+
+.DropMenu.Show {
+  display: block;
+}
+
+.DropMenu ul {
+  padding: 0;
+  list-style: none;
+}
+
+.DropMenu ul li {
+  margin-top: 0.3rem;
+}
+
+.DropMenu ul li:hover {
+  background: #ccc;
+}
+
+.ListBtn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: inherit;
+  text-transform: capitalize;
+}

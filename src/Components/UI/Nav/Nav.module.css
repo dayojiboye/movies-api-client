@@ -1,0 +1,41 @@
+.Nav {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.Nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Nav ul li a {
+  text-decoration: none;
+  padding: 0.4rem;
+  font-family: inherit;
+  font-weight: bold;
+  color: black;
+  outline: none;
+  margin-right: 1rem;
+}
+
+.Nav ul li a:hover {
+  background: #ccc;
+}
+
+@media (max-width: 399px) {
+  .Nav ul {
+    flex-direction: column;
+  }
+
+  .Nav ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .Nav ul li a {
+    margin-right: 0;
+  }
+}

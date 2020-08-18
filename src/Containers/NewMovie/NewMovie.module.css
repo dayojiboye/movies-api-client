@@ -1,0 +1,100 @@
+.NewMovie {
+  width: 100%;
+}
+
+.Form {
+  width: 600px;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.Form header h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.InputGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.FormGroup {
+  margin-bottom: 2rem;
+  width: 400px;
+  max-width: 90%;
+}
+
+.Label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.Input {
+  width: 100%;
+  padding: 0.7rem;
+  font-family: inherit;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  outline: none;
+  border: 1px solid #ccc;
+  transition: all 0.4s ease-in-out;
+}
+
+.Input:focus {
+  border: 1px solid goldenrod;
+}
+
+.FormGroup textarea {
+  resize: none;
+}
+
+.Label.Invalid {
+  color: red;
+}
+
+.Input.Invalid {
+  border: 1px solid red;
+}
+
+.Error {
+  color: red;
+  display: inline-block;
+}
+
+.FormFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormFooter button {
+  background: goldenrod;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  border: 1px solid goldenrod;
+  padding: 0.7rem 0;
+  width: 150px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.FormFooter button:hover {
+  background: rgb(192, 141, 13);
+  border: 1px solid rgb(192, 141, 13);
+}
+
+.FormFooter button:disabled {
+  background: #ccc;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,49 @@
+.MoviesList {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.MoviesList ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.MoviesList ul li {
+  background: white;
+  margin: 0 auto 3rem auto;
+  border: 1px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  flex-basis: calc(33% - 40px);
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.MovieImg {
+  width: 100%;
+}
+
+.MovieImg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.MovieInfo {
+  padding: 0 1rem;
+}
+
+.MovieGenre {
+  text-transform: capitalize;
+}
+
+@media (max-width: 699px) {
+  .MoviesList {
+    width: 90%;
+  }
+
+  .MoviesList ul {
+    flex-flow: column;
+  }
+}

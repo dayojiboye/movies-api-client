@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './Components/UI/Header/Header';
+import Nav from './Components/UI/Nav/Nav';
+import HomePage from './Containers/HomePage/Home';
+import NewMovie from './Containers/NewMovie/NewMovie';
+import ErrorPage from './Containers/ErrorPage/Error';
+import DeleteMovie from './Containers/DeleteMovie/DeleteMovie';
+
+class App extends Component {
+  render() {
+    return (
+      <Fragment>
+        <Header />
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/addmovie" component={NewMovie} />
+          <Route path="/error" component={ErrorPage} />
+          <Route path="/deletemovie" component={DeleteMovie} />
+        </Switch>
+      </Fragment>
+    );
+  }
 }
 
 export default App;
