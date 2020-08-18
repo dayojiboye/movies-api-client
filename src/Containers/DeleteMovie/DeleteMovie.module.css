@@ -18,6 +18,7 @@
 .Dropdown {
   position: relative;
   margin-top: 1rem;
+  margin-bottom: 20rem;
 }
 
 .DropBtn {
@@ -41,7 +42,6 @@
 
 .DropMenu.Show {
   display: block;
-  margin-bottom: 4rem;
 }
 
 .DropMenu ul {
