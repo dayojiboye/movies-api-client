@@ -17,8 +17,8 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/addmovie" component={NewMovie} />
-          <Route path="/error" component={ErrorPage} />
           <Route path="/deletemovie" component={DeleteMovie} />
+          <Route component={ErrorPage} />
         </Switch>
       </Fragment>
     );

@@ -6,7 +6,6 @@ import Dropdown from '../../Components/UI/Dropdown/Dropdown';
 import Movies from './MoviesList/movies';
 import * as actions from '../../store/actions/index';
 import Spinner from '../../Components/UI/Spinner/Spinner';
-import { Redirect } from 'react-router-dom';
 
 class HomePage extends Component {
   state = {
@@ -52,7 +51,6 @@ class HomePage extends Component {
   }
 
   render() {
-    let redirectToErrorPage = null;
     let style = [classes.DropMenu];
     let movies = (
       <Movies
@@ -72,13 +70,8 @@ class HomePage extends Component {
       style.push(classes.Show);
     }
 
-    if (this.props.error) {
-      redirectToErrorPage = <Redirect to="/error" />;
-    }
-
     return (
       <Fragment>
-        {redirectToErrorPage}
         <main className={classes.Home}>
           <div className={classes.HomeDialogue}>
             <Dropdown
@@ -111,7 +104,6 @@ class HomePage extends Component {
 const mapStateToProps = (state) => {
   return {
     movies: state.movies.movies,
-    error: state.movies.error,
     loading: state.movies.loading,
     genre: state.movies.genre,
   };
