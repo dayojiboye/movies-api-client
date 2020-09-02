@@ -177,7 +177,7 @@ class NewMovie extends Component {
     }
 
     if (this.props.loading) {
-      btnText = <i className="far fa-spinner fa-spin fa-lg"></i>;
+      btnText = <i className="fas fa-spinner fa-spin"></i>;
     }
 
     return (
